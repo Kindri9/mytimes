@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
   display: inline-flex;
   font-family: Verdana;
@@ -14,3 +15,27 @@ span {
   display: inline-flex;
   justify-content: flex-end;
 }
+=======
+.container {
+	display: flex;
+}
+
+.header {
+	font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+	display: inline-flex;
+}
+
+.header nav-right {
+	display: inline-flex;
+}
+
+.header nav-left {
+	display: inline-flex;
+}
+
+.logo {
+		color: MediumAquamarine;
+}
+>>>>>>> a03dc96a89e78e4dadbd29fecc0a7288f020645e
