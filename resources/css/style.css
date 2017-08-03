@@ -48,27 +48,66 @@ nav span {
   color: black;
 }
 
-.content.column.large {
-  display: flex
+.column {
+  display: flex;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.img {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.column.large {
+  display: flex;
+  flex-direction: column;
   width: 630px;
+}
+
+.large.img.mother {
+  background-image: url(../images/mainstory.png);
+  background-position: center;
+}
+
+.large.main.story {
   border-style: solid;
   border-color: black;
   border-width: thin;
 }
 
-.column.main {
+.large.second.story {
   border-style: solid;
   border-color: black;
   border-width: thin;
 }
 
-.column.second {
+.large.img.earth {
+  background-image: url(../images/fallseason.png);
+  background-position: center;
   border-style: solid;
   border-color: black;
   border-width: thin;
 }
 
-.column.third {
+.large.third.story {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.large.img.camera {
+  background-image: url(../images/cameraguy.png);
+  background-position: center;
   border-style: solid;
   border-color: black;
   border-width: thin;
@@ -76,16 +115,15 @@ nav span {
 
 .column.medium {
   width: 300px;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  display: flex;
+  flex-direction: column;
 }
 
 .column.small {
+  display: flex;
   width: 240px;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Footer*/
