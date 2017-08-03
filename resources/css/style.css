@@ -1,13 +1,26 @@
 /*Header*/
 
 header {
-  display: inline-flex;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  border: solid;
+  border-color: black;
+  border-width: thin;
+  max-width: 740px;
 }
 
-.header img {
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.logo img {
   width: 70;
   height: 60;
   margin-right: 12px;
@@ -24,25 +37,63 @@ nav span {
 
 /*Main Content*/
 
-.column.large {
+.content {
+  display: flex;
+  flex-grow: 1;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.content.column.large {
+  display: flex
   width: 630px;
   border-style: solid;
   border-color: black;
-  border-width: 1;
+  border-width: thin;
+}
+
+.column.main {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.column.second {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.column.third {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
 }
 
 .column.medium {
   width: 300px;
   border-style: solid;
   border-color: black;
-  border-width: 1;
+  border-width: thin;
 }
 
 .column.small {
   width: 240px;
   border-style: solid;
   border-color: black;
-  border-width: 1;
+  border-width: thin;
 }
 
 /*Footer*/
+
+footer{
+  display: flex;
+  flex-grow: 1;
+  border: solid;
+  border-color: black;
+  border-width: thin;
+}
