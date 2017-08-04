@@ -7,9 +7,7 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
   max-width: 740px;
 }
 
@@ -26,13 +24,15 @@ header {
   margin-right: 12px;
 }
 
-.header span {
+.logo span {
   color: MediumAquamarine;
+
 }
 
 nav span {
-  display: inline-block;
+  display: inline-flex;
   padding: 20px 10px
+  color: black;
 }
 
 /*Main Content*/
@@ -40,9 +40,7 @@ nav span {
 .content {
   display: flex;
   flex-grow: 1;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -50,9 +48,8 @@ nav span {
 
 .column {
   display: flex;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  margin-right: 32px;
+  border: 1px solid black;
 }
 
 .img {
@@ -60,6 +57,8 @@ nav span {
   font-weight: bold;
   font-size: 30px;
   color: white;
+  height: 300px;
+  text-align: center;
 }
 
 .story {
@@ -70,53 +69,56 @@ nav span {
 
 .column.large {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 630px;
 }
 
 .large.img.mother {
+  display: flex;
   background-image: url(../images/mainstory.png);
-  background-position: center;
+  font-size: 40px;
 }
 
 .large.main.story {
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
 }
 
 .large.second.story {
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
 }
 
 .large.img.earth {
+  display: flex;
   background-image: url(../images/fallseason.png);
-  background-position: center;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
 }
 
 .large.third.story {
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
 }
 
 .large.img.camera {
+  display: flex;
   background-image: url(../images/cameraguy.png);
-  background-position: center;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
+}
+
+.earth, .camera {
+  display: flex;
+  flex-direction: row;
 }
 
 .column.medium {
   width: 300px;
   display: flex;
   flex-direction: column;
+}
+
+.medium.img.cats {
+  display: flex;
+  background-image: url(../images/cat-ceo.png);
+  border: 1px solid black;
 }
 
 .column.small {
@@ -126,12 +128,16 @@ nav span {
   flex-direction: column;
 }
 
+.small.img.cookie {
+  display: flex;
+  background-image: url(../images/cookie.png);
+  border: 1px solid black;
+}
+
 /*Footer*/
 
 footer{
   display: flex;
   flex-grow: 1;
-  border: solid;
-  border-color: black;
-  border-width: thin;
+  border: 1px solid black;
 }
