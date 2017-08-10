@@ -49,7 +49,6 @@ nav span {
 .column {
   display: flex;
   margin-right: 32px;
-  border: 1px solid black;
 }
 
 .img {
@@ -74,39 +73,36 @@ nav span {
   width: 630px;
 }
 
-.large.img.mother {
-  display: flex;
+.img.mother {
   background-image: url(../images/mainstory.png);
   font-size: 40px;
 }
 
-.large.main.story {
+.main {
   border: 1px solid black;
 }
 
-.large.second.story {
+.second {
   border: 1px solid black;
 }
 
-.large.img.earth {
-  display: flex;
+.img.earth {
   background-image: url(../images/fallseason.png);
   border: 1px solid black;
 }
 
-.large.third.story {
+.third {
   border: 1px solid black;
 }
 
-.large.img.camera {
-  display: flex;
+.img.camera {
   background-image: url(../images/cameraguy.png);
   border: 1px solid black;
 }
 
-.earth, .camera {
-  display: flex;
-  flex-direction: row;
+.mother.main.second.earth.third.camera {
+  display:flex;
+  align-items: ;
 }
 
 .column.medium {
@@ -115,23 +111,38 @@ nav span {
   flex-direction: column;
 }
 
-.medium.img.cats {
+.img.cats {
   display: flex;
   background-image: url(../images/cat-ceo.png);
-  border: 1px solid black;
 }
 
 .column.small {
   display: flex;
-  width: 240px;
-  display: flex;
   flex-direction: column;
+  width: 240px;
 }
 
-.small.img.cookie {
+.column.small h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.bites{
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  margin: 0;
+  padding: 12px 20px;
+  border-bottom: solid 1px black;
+}
+
+.img.cookie {
   display: flex;
   background-image: url(../images/cookie.png);
-  border: 1px solid black;
+  height: 204px;
 }
 
 /*Footer*/
