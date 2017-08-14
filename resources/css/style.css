@@ -156,9 +156,9 @@ nav span {
 }
 
 .img.cookie {
-  display: flex;
   background-image: url(../images/cookie.png);
   height: 204px;
+  display: flex;
 }
 
 /*Footer*/
